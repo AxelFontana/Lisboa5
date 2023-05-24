@@ -1,4 +1,4 @@
-package com.example.lisboa5lastfm.lastfm.external
+package lisboa5lastfm
 
 sealed class Artist {
     data class ArtistData(

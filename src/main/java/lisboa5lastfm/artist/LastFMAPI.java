@@ -1,4 +1,4 @@
-package com.example.lisboa5lastfm.lastfm.external.artist;
+package lisboa5lastfm.artist;
 
 
 import retrofit2.Call;

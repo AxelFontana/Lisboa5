@@ -1,6 +1,6 @@
-package com.example.lisboa5lastfm.lastfm.external.artist
+package lisboa5lastfm.artist
 
-import com.example.lisboa5lastfm.lastfm.external.Artist
+import lisboa5lastfm.Artist
 
 
 internal class ArtistExternalServiceImpl (

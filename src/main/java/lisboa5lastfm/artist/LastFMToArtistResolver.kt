@@ -1,7 +1,7 @@
-package com.example.lisboa5lastfm.lastfm.external.artist
+package lisboa5lastfm.artist
 
 
-import com.example.lisboa5lastfm.lastfm.external.Artist
+import lisboa5lastfm.Artist
 import com.google.gson.Gson
 import com.google.gson.JsonObject
 
@@ -36,11 +36,11 @@ internal class LastFMToArtistResolverImpl: LastFMToArtistResolver {
         return jObjFromGson[ARTIST].asJsonObject
     }
 
-    private fun JsonObject.getArtistName() = this[com.example.lisboa5lastfm.lastfm.external.artist.ARTIST_NAME].asString
+    private fun JsonObject.getArtistName() = this[ARTIST_NAME].asString
 
-    private fun JsonObject.getArtistBioContent() = this[com.example.lisboa5lastfm.lastfm.external.artist.BIO].asJsonObject[com.example.lisboa5lastfm.lastfm.external.artist.CONTENT].asString
+    private fun JsonObject.getArtistBioContent() = this[BIO].asJsonObject[CONTENT].asString
 
-    private fun JsonObject.getArtistUrl() = this[com.example.lisboa5lastfm.lastfm.external.artist.URL].asString
+    private fun JsonObject.getArtistUrl() = this[URL].asString
 
 
 }
